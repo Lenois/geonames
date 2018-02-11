@@ -1,0 +1,25 @@
+{
+  "totalResultsCount": 2,
+  "geonames": [
+    {
+      "lng": "10.5",
+      "geonameId": 2921044,
+      "countryCode": "DE",
+      "name": "Germany",
+      "toponymName": "Federal Republic of Germany",
+      "lat": "51.5",
+      "fcl": "A",
+      "fcode": "PCLI"
+    },
+    {
+      "lng": "12.51559",
+      "geonameId": 8354410,
+      "countryCode": "DE",
+      "name": "East Germany",
+      "toponymName": "German Democratic Republic",
+      "lat": "52.19498",
+      "fcl": "A",
+      "fcode": "PCLH"
+    }
+  ]
+}
