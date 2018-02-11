@@ -1,4 +1,4 @@
-package io.github.lenois.geonames
+package io.github.lenois.geonames.request
 
 class SearchRequest(
         val searchString: String,

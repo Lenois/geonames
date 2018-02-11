@@ -1,9 +1,11 @@
-package io.github.lenois.geonames
+package io.github.lenois.geonames.webservice
 
 import com.github.kittinunf.fuel.core.FuelManager
 import com.github.kittinunf.fuel.core.response
 import com.github.kittinunf.fuel.httpGet
-import com.github.kittinunf.fuel.jackson.jacksonDeserializerOf
+import io.github.lenois.geonames.request.SearchRequest
+import io.github.lenois.geonames.SearchResultWrapper
+import io.github.lenois.geonames.Toponym
 
 //todo: implementShortAndLongWebSerivices
 abstract class AbstractWebService<T : Toponym> protected constructor(

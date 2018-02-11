@@ -1,9 +1,9 @@
 package io.github.lenois.geonames
 import com.github.kittinunf.fuel.core.Client
 import com.github.kittinunf.fuel.core.FuelManager
-import com.github.kittinunf.fuel.core.Request
-import com.github.kittinunf.fuel.core.Response
 import com.winterbe.expekt.should
+import io.github.lenois.geonames.request.SearchRequest
+import io.github.lenois.geonames.webservice.ShortResponseWebService
 import io.mockk.every
 import io.mockk.mockk
 import org.jetbrains.spek.api.Spek
