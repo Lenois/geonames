@@ -1,5 +1,8 @@
 package io.github.lenois.geonames
 
-interface WebService {
-    fun search(request: SearchRequest)
+import com.github.kittinunf.fuel.core.ResponseDeserializable
+
+interface WebService<T: Toponym> {
+    fun search(request: SearchRequest): T
+    fun getDeserializer(): ResponseDeserializable<T>
 }
