@@ -40,7 +40,11 @@
             <groupId>com.github.kittinunf.fuel</groupId>
             <artifactId>fuel</artifactId>
             <version>${fuel.version}</version>
-            <type>pom</type>
+        </dependency>
+        <dependency>
+            <groupId>com.github.kittinunf.fuel</groupId>
+            <artifactId>fuel-jackson</artifactId>
+            <version>${fuel.version}</version>
         </dependency>
         <dependency>
             <groupId>org.jetbrains.kotlin</groupId>
