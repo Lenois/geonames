@@ -18,9 +18,9 @@ abstract class AbstractWebService<T : Toponym> protected constructor(
         )
     }
 
-    override fun search(request: SearchRequest): T {
-         return "/search".httpGet(request.asPairList())
-                 .response(getDeserializer())
+    override fun search(request: SearchRequest): SearchResultWrapper<T> {
+         return "/searchJSON".httpGet(request.asPairList())
+                 .response(getSearchDeserializer())
                  .third.get()
     }
 
