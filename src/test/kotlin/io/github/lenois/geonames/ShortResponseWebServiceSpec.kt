@@ -14,9 +14,9 @@ import org.jetbrains.spek.api.dsl.on
 
 class ShortResponseWebServiceSpec: Spek({
 
-    given("A short response web service"){
+    given("A short response web service that has a search query invoked"){
         val webService = ShortResponseWebService("test")
-        on("a search query"){
+        on("a search query with an ok response"){
             //mock the client
             val client = mockk<Client>()
             val jsonResponse = this.javaClass.classLoader
