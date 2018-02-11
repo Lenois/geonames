@@ -1,0 +1,1 @@
+[![Build Status](https://travis-ci.org/Lenois/geonames.png)](https://travis-ci.org/Lenois/geonames)
