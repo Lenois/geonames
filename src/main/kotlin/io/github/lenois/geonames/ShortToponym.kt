@@ -5,7 +5,7 @@ import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlElementWrapper
 import com.fasterxml.jackson.dataformat.xml.annotation.JacksonXmlRootElement
 
 @JsonIgnoreProperties(ignoreUnknown = true)
-data class ShortToponym(
+open class ShortToponym(
         val toponymName: String?,
         val name: String?,
         val lat: Double?,
