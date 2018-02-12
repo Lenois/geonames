@@ -1,4 +1,4 @@
-package io.github.lenois.geonames
+package io.github.lenois.geonames.webservice
 import com.github.kittinunf.fuel.core.Client
 import com.github.kittinunf.fuel.core.FuelManager
 import com.winterbe.expekt.should

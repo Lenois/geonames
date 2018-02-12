@@ -4,23 +4,23 @@ class SearchRequest(
         val searchString: String,
         val queryType: QueryType,
         val nameStartsWith: String? = null,
-        val maxRows: Int = 100,
-        val startRow: Int = 0,
+        val maxRows: Int? = null,
+        val startRow: Int? = null,
         val country: String? = null,
         val countryBias: String? = null,
         val continentCode: ContinentCode? = null,
         val featureClass: FeatureClass? = null,
         val cities: CitiesSize? = null,
         //TODO Validate this from java locale before submitting the request
-        val lang: String = "en",
-        val isNameRequired: Boolean = false,
+        val lang: String? = null,
+        val isNameRequired: Boolean? = null,
         val tag: String? = null,
-        val operator: Operator = Operator.AND,
-        val fuzziness: Double = 1.0,
+        val operator: Operator? = null,
+        val fuzziness: Double? = null,
         val boundingBox: BoundingBox? = null,
         //TODO Validate this from java locale before submitting the request
         val searchLang: String? = null,
-        internal val orderBy: OrderByClause? = null
+        val orderBy: OrderByClause? = null
 
 ) : Request {
     override fun asPairList(): List<Pair<String, Any?>> {
@@ -37,7 +37,7 @@ class SearchRequest(
                 "lang" to lang,
                 "isNameRequired" to isNameRequired,
                 "tag" to tag,
-                "operator" to operator.operator,
+                "operator" to operator?.operator,
                 "fuzzy" to fuzziness,
                 "east" to boundingBox?.east,
                 "west" to boundingBox?.west,
